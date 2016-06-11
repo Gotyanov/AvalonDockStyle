@@ -1,2 +1,2 @@
 # Atom theme for AvalonDock
-![sample window](image.PGN "sample window screenshot")
+![sample window](https://github.com/Gotyanov/AvalonDockStyle/blob/master/image.PNG?raw=true "sample window screenshot")
