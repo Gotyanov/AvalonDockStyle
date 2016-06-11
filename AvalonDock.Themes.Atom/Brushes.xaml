@@ -1,0 +1,53 @@
+﻿
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <SolidColorBrush x:Key="DocumentBackgroundBrush" Color="White"/>
+    <SolidColorBrush x:Key="ToolBackgroundBrush" Color="#EBEBEB"/>
+    <SolidColorBrush x:Key="ToolLightBackgroundBrush" Color="#F7F4F4"/>
+    <SolidColorBrush x:Key="HightlightedBackgroundBrush" Color="#E1E1E1"/>
+    <SolidColorBrush x:Key="BorderToolBrush" Color="#D6D6D6"/>
+    <SolidColorBrush x:Key="ActiveDocumentTitleForegroundBrush" Color="#303030"/>
+    <SolidColorBrush x:Key="UnactiveDocumentTitleForegroundBrush" Color="#999999"/>
+
+    <SolidColorBrush x:Key="ActiveToolTitleBackgroundBrush" Color="#4777D7"/>
+    <SolidColorBrush x:Key="ActiveToolTitleForegroundBrush" Color="White"/>
+    <SolidColorBrush x:Key="UnactiveToolTitleBackgroundBrush" Color="#EBEBEB"/>
+    <SolidColorBrush x:Key="UnactiveToolTitleForegroundBrush" Color="#303030"/>
+    <SolidColorBrush x:Key="ToolHeaderForegroundBrush" Color="#303030"/>
+    
+    
+    <FontFamily x:Key="HeaderFontFamily">Segoe UI Light, Lucida Sans Unicode, Verdana</FontFamily>
+    <system:Double x:Key="HeaderFontSize">11</system:Double>
+    <system:Double x:Key="TabWidth">200</system:Double>
+    <system:Double x:Key="TabHeight">26</system:Double>
+    
+    <LinearGradientBrush x:Key="TabDividerBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="Transparent" Offset="0"/>
+        <GradientStop Color="#D6D6D6" Offset="0.5"/>
+        <GradientStop Color="#D6D6D6" Offset="1"/>
+    </LinearGradientBrush>
+
+    <system:Double x:Key="TitlebarHeight">26</system:Double>
+
+    <Color x:Key="HighlightBackgroundColor">#FFE7E7E7</Color>
+    <Color x:Key="PressHighlightBackgroundColor">#FF4EA6EA</Color>
+    <Color x:Key="HighlightForegroundColor">#FF333333</Color>
+    <Color x:Key="PressHighlightForegroundColor">White</Color>
+    <Color x:Key="AccentColor">White</Color>
+    <SolidColorBrush x:Key="WindowTitleColorBrush" Color="{DynamicResource AccentColor}" />
+    <system:Double x:Key="WindowTitleFontSize">16</system:Double>
+    <system:Double x:Key="ContentFontSize">12</system:Double>
+    <Color x:Key="BlackColor">#FF000000</Color>
+    <Color x:Key="WhiteColor">#FFFFFFFF</Color>
+    <SolidColorBrush x:Key="WhiteBrush" Color="{DynamicResource WhiteColor}" />
+    <SolidColorBrush x:Key="BlackBrush" Color="{DynamicResource BlackColor}" />
+    <SolidColorBrush x:Key="SemiTransparentWhiteBrush" Color="#55FFFFFF"/>
+    <SolidColorBrush x:Key="TransparentWhiteBrush" Color="#00FFFFFF"/>
+    <SolidColorBrush x:Key="HighlightBrush" Color="{DynamicResource HighlightBackgroundColor}" />
+    <SolidColorBrush x:Key="PressHighlightBrush" Color="{DynamicResource PressHighlightBackgroundColor}" />
+    <SolidColorBrush x:Key="HighlightForegroundBrush" Color="{DynamicResource HighlightForegroundColor}" />
+    <SolidColorBrush x:Key="PressHighlightForegroundBrush" Color="{DynamicResource PressHighlightForegroundColor}" />
+
+</ResourceDictionary>

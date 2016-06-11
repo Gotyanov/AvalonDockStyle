@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38B376F2-9095-4295-BD19-F1691730AD21}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvalonDock.Themes.Atom</RootNamespace>
+    <AssemblyName>AvalonDock.Themes.Atom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonDock.2.0.2000\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtomTheme.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\DockAnchorableBottom.png" />
+    <Content Include="Images\DockAnchorableLeft.png" />
+    <Content Include="Images\DockAnchorableRight.png" />
+    <Content Include="Images\DockAnchorableTop.png" />
+    <Content Include="Images\DockDocumentAsAnchorableBottom.png" />
+    <Content Include="Images\DockDocumentAsAnchorableLeft.png" />
+    <Content Include="Images\DockDocumentAsAnchorableRight.png" />
+    <Content Include="Images\DockDocumentAsAnchorableTop.png" />
+    <Content Include="Images\DockDocumentBottom.png" />
+    <Content Include="Images\DockDocumentInside.png" />
+    <Content Include="Images\DockDocumentLeft.png" />
+    <Content Include="Images\DockDocumentRight.png" />
+    <Content Include="Images\DockDocumentTop.png" />
+    <Content Include="Images\DockPaneEmpty.png" />
+    <Content Include="Images\DockPaneLargeEmpty.png" />
+    <Content Include="Images\HTabGroup.png" />
+    <Content Include="Images\Locked.png" />
+    <Content Include="Images\PinAutoHide.png" />
+    <Content Include="Images\PinAutoHide_Black.png" />
+    <Content Include="Images\PinAutoHide_Dark.png" />
+    <Content Include="Images\PinClose.png" />
+    <Content Include="Images\PinClose_Black.png" />
+    <Content Include="Images\PinClose_Dark.png" />
+    <Content Include="Images\PinDocMenu.png" />
+    <Content Include="Images\PinDocMenu_Black.png" />
+    <Content Include="Images\PinMaximize.png" />
+    <Content Include="Images\PinMaximize_Black.png" />
+    <Content Include="Images\PinMaximize_Dark.png" />
+    <Content Include="Images\PinMenu.png" />
+    <Content Include="Images\PinMenu_Black.png" />
+    <Content Include="Images\PinMenu_Dark.png" />
+    <Content Include="Images\PinRestore.png" />
+    <Content Include="Images\PinRestore_Black.png" />
+    <Content Include="Images\PinRestore_Dark.png" />
+    <Content Include="Images\VTabGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Brushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StylizableWindowLib\StylizableWindowLib.csproj">
+      <Project>{6b1fbd45-6358-4afa-b38f-08e99ccf0467}</Project>
+      <Name>StylizableWindowLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
